@@ -7,7 +7,7 @@
 
 game::game()
 {
-    srand(time(nullptr));
+    srand(static_cast<unsigned>(time(nullptr)));
     
     number_to_guess = rand() % 100 -1;
     guess_count = 0;

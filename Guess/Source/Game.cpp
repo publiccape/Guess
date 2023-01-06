@@ -1,12 +1,20 @@
 #include "../Header/Game.h"
 #include "../Header/Console.h"
 #include <cstdlib>
+#include <ctime>
 
 //  The constructor resets all the values to default.
 
 game::game()
 {
-    reset();
+    srand(time(nullptr));
+    
+    number_to_guess = rand() % 100 -1;
+    guess_count = 0;
+    continue_playing = true;
+    state = playing;
+
+    console::write_rules();
 }
 
 

@@ -30,4 +30,6 @@
 *.exe
 *.out
 *.app
-.idea/.idea.Guess/.idea/vcs.xml
+
+.idea/
+x64/
